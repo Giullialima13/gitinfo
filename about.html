@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós - GitInfo</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">Repor</button>
+    </div>
+
+    <div id="mainDiv">
+      <article>
+        <h2 class="text-center">Sobre Nós</h2>
+
+        <p class="lead text-center">
+          O GitInfo é uma plataforma educativa criada para ajudar estudantes e
+          iniciantes a aprender Git através de explicações simples, práticas e
+          diretas.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card Olavo -->
+          <div class="col-md-5">
+            <div class="team-card">
+              <img src="olavo.png" alt="Olavo" class="team-photo" />
+              <h3>Olavo Gonçalves Moreira</h3>
+            </div>
+          </div>
+
+          <!-- Card Giullia -->
+          <div class="col-md-5">
+            <div class="team-card">
+              <img src="giullia.png" alt="Giullia" class="team-photo" />
+              <h3>Maria Giullia Lima Lopes Barbosa</h3>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      </article>
+    </div>
+
+    <footer>A work made by Olavo and Giullia</footer>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GitIntermediario</title>
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <!-- MENU DESKTOP-->
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <!-- MENU HAMBÚRGUER-->
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU MOBILE-->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="mainDiv">
+      <nav id="sideNav">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="gitbasico.html">Git Básico</a></li>
+          <li><a href="gitintermediario.html">Git Intermediário</a></li>
+          <li><a href="gitavançado.html">Git Avançado</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article>
+          <h2>Git Intermediário</h2>
+          <div>
+            <p>Aprenda o nível intermediário de Git.</p>
+            <h3>Introdução</h3>
+            <p>
+              Nesta etapa, você já entende os comandos básicos do Git e está
+              pronto para trabalhar com situações mais complexas do dia a dia,
+              como gerenciamento de branches, resolução de conflitos e
+              colaboração com várias pessoas no mesmo repositório. O objetivo
+              desta página é ensinar conceitos intermediários que tornam o seu
+              fluxo de trabalho mais organizado e eficiente.
+            </p>
+            <h3>Trabalhando com Branches</h3>
+            <h4>
+              Branches permitem criar versões paralelas do seu projeto, evitando
+              bagunça e facilitando novos recursos sem quebrar o código
+              principal.
+            </h4>
+            <p>O que você aprenderá:</p>
+            <ul>
+              <li>Criar branches para novas funcionalidades</li>
+              <li>Alternar entre branches</li>
+              <li>
+                Entender a diferença entre main, develop e branches de features
+              </li>
+              <li>Remover branches que não são mais necessárias</li>
+            </ul>
+
+            <h4>Comandos importantes:</h4>
+            <p class="codigodestaque">git branch nome-da-branch</p>
+            <p class="codigodestaque">git checkout nome-da-branch</p>
+            <p class="codigodestaque">git switch nome-da-branch</p>
+            <p class="codigodestaque">git branch -d nome-da-branch</p>
+
+            <h3>Resolvendo Conflitos</h3>
+            <h4>
+              Conflitos acontecem quando duas pessoas alteram a mesma parte do
+              arquivo. Eles não são erros: são um processo natural em
+              colaboração
+            </h4>
+            <p>Você verá:</p>
+            <ul>
+              <li>Como identificar conflitos</li>
+              <li>Como resolver manualmente</li>
+              <li>Como confirmar a resolução</li>
+            </ul>
+
+            <h4>Mensagem típica de conflito:</h4>
+            <p class="codigodestaque">
+              &lt;&lt;&lt; HEAD Seu código ======= Código de outra pessoa
+              &gt;&gt;&gt; branch-remota
+            </p>
+
+            <h3>Git Stash - Guardando trabalho temporariamente</h3>
+            <h4>
+              Ótimo para quando você precisa trocar de tarefa rapidamente sem
+              perder mudanças em andamento.
+            </h4>
+            <h4>Comandos úteis:</h4>
+            <p class="codigodestaque">git stash</p>
+            <p class="codigodestaque">git stash list</p>
+            <p class="codigodestaque">git stash apply</p>
+
+            <h3>Git Stash - Guardando trabalho temporariamente</h3>
+            <h4>Fluxo de Trabalho Intermediário (Exemplo)</h4>
+            <ol>
+              <li>Criar branch</li>
+              <li>Desenvolver</li>
+              <li>Commitar</li>
+              <li>Resolver conflitos</li>
+              <li>Fazer merge para develop</li>
+              <li>Enviar ao GitHub</li>
+            </ol>
+            <button
+              onclick="window.location.href='quizintermediario.html'"
+              class="btn"
+              style="
+                padding: 10px 20px;
+                background: #90d322;
+                color: black;
+                border: none;
+                cursor: pointer;
+              "
+            >
+              Faça o quiz
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+
+    <footer>A work made by Olavo and Giulia</footer>
+  </body>
+</html>

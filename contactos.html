@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <!-- MENU DESKTOP-->
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <!-- MENU HAMBÚRGUER -->
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU MOBILE -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- FORMULÁRIO DE CONTACTO -->
+    <main>
+      <section class="form-container">
+        <h2>Entre em Contacto</h2>
+        <p>
+          Preencha o formulário abaixo e entraremos em contacto consigo em
+          breve.
+        </p>
+        <form id="contactForm" novalidate>
+          <label for="name">Nome Completo:</label>
+          <input
+            type="text"
+            id="name"
+            maxlength="40"
+            placeholder="Seu nome"
+            required
+          />
+          <small class="error-msg" id="nameError"></small>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="exemplo@email.com"
+            required
+          />
+          <small class="error-msg" id="emailError"></small>
+
+          <label for="message">Mensagem:</label>
+          <textarea
+            id="message"
+            maxlength="300"
+            placeholder="Escreva sua mensagem..."
+            required
+          ></textarea>
+          <small class="error-msg" id="messageError"></small>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>A work made by Olavo and Giullia</footer>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+    <script src="formulario.js"></script>
+  </body>
+</html>

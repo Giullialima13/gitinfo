@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Quiz Avançado</title>
+  </head>
+
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <!-- MENU DESKTOP-->
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <!-- MENU HAMBÚRGUER-->
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU MOBILE-->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Quiz Avançado de Git</h2>
+
+      <p>Teste seus conhecimentos avançados sobre Git.</p>
+
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+      </div>
+
+      <div id="quiz">
+        <h2 id="pergunta"></h2>
+
+        <button onclick="responder(0)" id="op1"></button>
+        <button onclick="responder(1)" id="op2"></button>
+        <button onclick="responder(2)" id="op3"></button>
+
+        <p class="result" id="resultado"></p>
+
+        <div class="navegacaoQuiz" id="navFinal" style="display: none">
+          <button
+            id="btnVoltar"
+            onclick="window.location.href='gitavançado.html'"
+          >
+            Voltar
+          </button>
+          <button
+            id="btnAvancar"
+            onclick="window.location.href='paginadeparabens.html'"
+          >
+            Finalizar
+          </button>
+          <button
+            id="recomecar"
+            onclick="window.location.href='quizavançado.html'"
+          >
+            Recomeçar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>A work made by Olavo and Giullia</footer>
+    <script src="quizavançado.js"></script>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

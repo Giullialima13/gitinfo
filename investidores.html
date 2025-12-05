@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Investidores</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <!-- MENU DESKTOP-->
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <!-- MENU HAMBÚRGUER-->
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU MOBILE-->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <h1 style="text-align: center">Nossos Investidores</h1>
+      <p style="text-align: center">
+        A seguir estão alguns de nossos investidores fictícios que ajudaram o
+        projeto a crescer.
+      </p>
+      <p style="text-align: center">
+        <em>As imagens abaixo foram geradas por inteligência artificial.</em>
+      </p>
+
+      <div class="investor-grid">
+        <div class="investor-card">
+          <img src="investidor2.png" alt="Investidor 1" />
+          <h3>Nexus Digital Ventures</h3>
+          <p>
+            A Nexus é uma empresa fictícia focada no desenvolvimento de soluções
+            educacionais e plataformas digitais. Investiu no GitInfo por
+            acreditar no impacto do aprendizado de Git para novos programadores.
+          </p>
+        </div>
+
+        <div class="investor-card">
+          <img src="investidor1.png" alt="Investidor 2" />
+          <h3>FutureCode Labs</h3>
+          <p>
+            Um laboratório fictício de inovação voltado a projetos de
+            tecnologia. Apoiou o GitInfo para incentivar estudantes a praticarem
+            versionamento de forma mais acessível.
+          </p>
+        </div>
+        <div class="investor-card">
+          <img src="investidor3.png" alt="Investidor 3" />
+          <h3>EduTech Alliance</h3>
+          <p>
+            Uma coalizão de empresas fictícias dedicadas à educação moderna.
+            Financia iniciativas que aproximam estudantes de ferramentas reais
+            do mercado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>A work made by Olavo and Giullia</footer>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GitBasico</title>
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <!-- MENU DESKTOP -->
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <!-- MENU HAMBÚRGUER-->
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU MOBILE-->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="mainDiv">
+      <nav id="sideNav">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="gitbasico.html">Git Básico</a></li>
+          <li><a href="gitintermediario.html">Git Intermediário</a></li>
+          <li><a href="gitavançado.html">Git Avançado</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article>
+          <h2>Introdução ao Git</h2>
+          <div>
+            <p>Aprenda o básico de Git.</p>
+            <h3>O que é Git?</h3>
+            <p>
+              Git é um sistema de controlo de versões distribuído que permite
+              guardar, acompanhar e gerenciar alterações no código de forma
+              eficiente. É usado por programadores, equipas de desenvolvimento e
+              projetos open-source no mundo inteiro.
+            </p>
+            <h3>Conceitos Fundamentais</h3>
+            <h4>1. Repositório (Repository)</h4>
+            <p>
+              É o local onde os arquivos do projeto e o seu histórico são
+              armazenados.
+            </p>
+
+            <h4>2. Commit</h4>
+            <p>
+              Um commit representa uma alteração registrada no histórico. É como
+              tirar uma “fotografia” do estado do projeto naquele momento.
+            </p>
+
+            <h4>3. Branch (Ramo)</h4>
+            <p>
+              Branches permitem criar versões paralelas do projeto. São úteis
+              para desenvolver funcionalidades sem interferir no código
+              principal.
+            </p>
+
+            <h4>4. Merge</h4>
+            <p>
+              Merge é o processo de unir alterações de um branch para outro.
+            </p>
+
+            <h4>5. Clone & Pull</h4>
+            <ul>
+              <li>Clone: copiar um repositório para o teu computador.</li>
+              <li>
+                Pull: atualizar o teu repositório local com as últimas mudanças
+                do repositório remoto.
+              </li>
+            </ul>
+            <h3>Comandos Básicos de Git</h3>
+            <h4>Inicializar um repositório:</h4>
+            <p class="codigodestaque">git init</p>
+
+            <h4>Clonar um repositório remoto:</h4>
+            <p class="codigodestaque">git clone URL_DO_REPOSITORIO</p>
+
+            <h4>Adicionar alterações:</h4>
+            <p class="codigodestaque">git add.</p>
+
+            <h4>Criar um commit:</h4>
+            <p class="codigodestaque">git commit -m "mensagem do commit"</p>
+
+            <h4>Ver o status:</h4>
+            <p class="codigodestaque">git status</p>
+
+            <h4>Criar um branch:</h4>
+            <p class="codigodestaque">git branch nome-do-branch</p>
+
+            <h4>Trocar de branch:</h4>
+            <p class="codigodestaque">git checkout nome-do-branch</p>
+
+            <h4>Fazer merge:</h4>
+            <p class="codigodestaque">git merge nome-do-branch</p>
+
+            <button
+              onclick="window.location.href='quizbasico.html'"
+              class="btn"
+              style="
+                padding: 10px 20px;
+                background: #90d322;
+                color: black;
+                border: none;
+                cursor: pointer;
+              "
+            >
+              Faça o quiz
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+
+    <footer>A work made by Olavo and Giulia</footer>
+  </body>
+</html>

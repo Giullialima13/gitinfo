@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GitAvançado</title>
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <header>
+      <div class="topNavBar">
+        <h1><a href="index.html">GitInfo</a></h1>
+
+        <!-- MENU DESKTOP-->
+        <nav class="desktop-nav">
+          <a href="about.html">Sobre nós</a>
+          <a href="contactos.html">Contate-nos</a>
+          <a href="investidores.html">Investidores</a>
+        </nav>
+
+        <!-- MENU HAMBÚRGUER-->
+        <button class="hamburger-btn" aria-label="Abrir menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU MOBILE-->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contate-nos</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+            <li><a href="gitbasico.html">Git Básico</a></li>
+            <li><a href="gitintermediario.html">Git Intermediário</a></li>
+            <li><a href="gitavançado.html">Git Avançado</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="mainDiv">
+      <nav id="sideNav">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="gitbasico.html">Git Básico</a></li>
+          <li><a href="gitintermediario.html">Git Intermediário</a></li>
+          <li><a href="gitavançado.html">Git Avançado</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <article>
+          <h2>Git Avançado</h2>
+          <div>
+            <p>Aprenda o nivel Avançado de Git.</p>
+            <h3>Introdução</h3>
+            <p>
+              Nesta página você explorará funcionalidades que fazem o Git ser
+              tão poderoso. Essas técnicas são usadas em grandes empresas,
+              projetos open-source e fluxos de trabalho complexos.
+            </p>
+
+            <h3>Rebase - História limpa e organizada</h3>
+            <h4>
+              Branches permitem criar versões paralelas do seu projeto, evitando
+              bagunça e facilitando novos recursos sem quebrar o código
+              principal.
+            </h4>
+            <p>O que você aprenderá:</p>
+            <ul>
+              <li>Quando usar rebase em vez de merge</li>
+              <li>Perigos e boas práticas</li>
+              <li>Como realizar um rebase interativo</li>
+            </ul>
+            <h4>Exemplo:</h4>
+            <p class="codigodestaque">git rebase -i HEAD~5</p>
+
+            <h4>Comandos importantes:</h4>
+            <p class="codigodestaque">git branch nome-da-branch</p>
+            <p class="codigodestaque">git checkout nome-da-branch</p>
+            <p class="codigodestaque">git switch nome-da-branch</p>
+            <p class="codigodestaque">git branch -d nome-da-branch</p>
+
+            <h3>Cherry-Pick - Selecionando commits específicos</h3>
+            <h4>Permite aplicar um commit isolado de outra branch.</h4>
+            <p>git cherry-pick &lt;hash&gt;</p>
+            <p>Ótimo para quando:</p>
+            <ul>
+              <li>Você precisa trazer uma correção urgente</li>
+              <li>Quer testar apenas uma mudança específica</li>
+            </ul>
+
+            <h3>Tags — Marcando versões</h3>
+            <h4>
+              Tags identificam pontos importantes no desenvolvimento, como
+              versões estáveis.
+            </h4>
+            <p class="codigodestaque">
+              git tag -a v1.0 -m "Primeira versão estável"
+            </p>
+            <p class="codigodestaque">git push --tags</p>
+
+            <h3>Git Bisect - Encontrando bugs automaticamente</h3>
+            <h4>
+              Um dos comandos mais poderosos do Git. Permite descobrir qual
+              commit introduziu um bug através de busca binária.
+            </h4>
+            <h4>Exemplo:</h4>
+            <p class="codigodestaque">git bisect start</p>
+            <p class="codigodestaque">git bisect bad</p>
+            <p class="codigodestaque">git bisect good &lt;hash&gt;</p>
+
+            <h3>Hooks - Automatizando tarefas</h3>
+            <h4>
+              Hooks permitem executar scripts automaticamente quando certas
+              ações acontecem.
+            </h4>
+            <p>Exemplos:</p>
+            <ul>
+              <li>Impedir commits com erros</li>
+              <li>Rodar testes antes de enviar ao repositório</li>
+              <li>Realizar formatação automática de código</li>
+            </ul>
+            <h4>Arquivos ficam em:</h4>
+            <p class="codigodestaque">.git/hooks/</p>
+
+            <h3>Submodules - Projetos dentro de projetos</h3>
+            <h4>
+              Para quando você precisa incorporar um repositório Git dentro de
+              outro.
+            </h4>
+            <h4>sql:</h4>
+            <p class="codigodestaque">git submodule add &lt;URL&gt;</p>
+            <p class="codigodestaque">git submodule update --init</p>
+
+            <h3>Fluxo Avançado Profissional</h3>
+            <h4>Fluxo de Trabalho Avançado(Exemplo)</h4>
+            <ol>
+              <li>main → versão estável</li>
+              <li>develop → código em desenvolvimento</li>
+              <li>feature/* → novas funcionalidades</li>
+              <li>release/* → estabilizar versões</li>
+              <li>hotfix/* → correções urgentes</li>
+            </ol>
+
+            <button
+              onclick="window.location.href='quizavançado.html'"
+              class="btn"
+              style="
+                padding: 10px 20px;
+                background: #90d322;
+                color: black;
+                border: none;
+                cursor: pointer;
+              "
+            >
+              Faça o quiz
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+    <footer>Feito por made by Olavo and Giulia</footer>
+    <script src="acessibilidade.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

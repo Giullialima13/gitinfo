@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parabéns!</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <style>
+      body {
+        text-align: center;
+        padding-top: 5rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #90d322;
+        animation: pop 0.5s ease-in-out;
+      }
+
+      @keyframes pop {
+        0% {
+          transform: scale(0.6);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .botaoVoltar {
+        background: #90d322;
+        color: black;
+        padding: 10px 25px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .botaoVoltar:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-btn">
+      <img src="3815150.png" alt="Acessibilidade" />
+    </div>
+
+    <!-- Painel de Acessibilidade -->
+    <div class="accessibility-panel shadow">
+      <h5>Opções de Acessibilidade</h5>
+
+      <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
+      <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
+      <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
+      <button class="acc-btn" onclick="resetAccessibility()">
+        Repor Definições
+      </button>
+    </div>
+
+    <h1>🎉 Parabéns! 🎉</h1>
+    <h2>Você concluiu o Curso GitInfo</h2>
+
+    <button class="botaoVoltar" onclick="location.href='index.html'">
+      Voltar ao início
+    </button>
+
+    <footer>A work made by Olavo and Giullia</footer>
+    <script src="acessibilidade.js"></script>
+  </body>
+</html>
